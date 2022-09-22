@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="google-signin-client_id" content="274174792930-v4nkhpq6q8h1fbhss87of94o3l0oears.apps.googleusercontent.com.apps.googleusercontent.com">
+        <title>Login with Google</title>
+        <link href="stylesheet" href="index.css">
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+    <body>
+<h2 class="alert alert-primary"> Sign in with Google</h2>
+<div class=""g-signin2 data-onsuccess="onSignIn"></div>
+<div class="data">
+    <p>Name</p>
+    <p id="name" class="alert alert-success"></p>
+    <P>Profile Pic</P>
+    <img id="image" class="rounded-circle" width="100" height="100" />
+    <p>Email</p>
+    <p id="email" class="alert alert-danger"></p>
+    <button type="button" class="btn btn-danger" onclick="signOut();">Sign Out</button>
+</div>
+
+
+        <script src="index.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    </body>
+
+
+</html>
